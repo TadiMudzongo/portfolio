@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Springboks 2023 Rugby World Cup Campaign | Tadiwanashe Mudzongo</title>
+  <link rel="stylesheet" href="../assets/css/main.css" />
+  <noscript><link rel="stylesheet" href="../assets/css/noscript.css" /></noscript>
+</head>
+<body class="is-preload">
+
+  <!-- Wrapper -->
+  <div id="wrapper" class="divided">
+
+<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in springboks-spotlight" id="first">
+  <div class="content">
+    <h2>Springboks 2023 World Cup Campaign Data Visualisation</h2>
+    <p>This project tracks every match played by the Springboks in their <strong>2023 Rugby World Cup campaign</strong>, highlighting key stats, player contributions, and the immense pressure faced in the knockout rounds. It includes performance data from SA Rugby and features <strong>71 highlight reels</strong> of individual players' game-defining moments.</p>
+
+    <h3>Project Highlights</h3>
+    <ul>
+      <li>Detailed match-by-match analysis and statistics</li>
+      <li>Player performance and contribution breakdown</li>
+      <li>Video highlights capturing crucial moments</li>
+      <li>Interactive Tableau dashboard for data exploration</li>
+    </ul>
+
+    <h3>Access the Dashboard</h3>
+    <p>Explore the full dataset and interactive visualisations using the official Tableau dashboard linked below.</p>
+
+    <ul class="actions">
+      <li><a href="https://public.tableau.com/app/profile/tadiwanashe.mudzongo/viz/Springboks2023RugbyWorldCupCampaign/TheSpringboks2023Campaign" class="button" target="_blank" rel="noopener">View Tableau Dashboard</a></li>
+      <li><a href="../index.html" class="button alt">Back to Home</a></li>
+    </ul>
+  </div>
+
+  <div class="image-stack">
+    <img src="/images/vs-france.png" alt="Springboks 2023 Rugby World Cup match image" />
+    
+  </div>
+</section>
+
+
+<section id="sourcing-data" class="springboks-spotlight">
+
+  <div class="image">
+    <img src="images/Sourcing Data.png" alt="South African Rugby Union data visualization" />
+  </div>
+  <div class="content">
+    <h2>Sourcing the Data</h2>
+    <p>
+      The core performance data for this project was sourced directly from the official <a href="https://www.sarugby.co.za/match-centre/" target="_blank" rel="noopener noreferrer">South African Rugby Union website</a>. This dataset includes detailed metrics such as meters gained, tackles made, ball carries, defenders beaten, offloads, turnovers, and general play kicks for each player and for each game, <strong>including the opposition</strong>. To gather this rich data efficiently, I employed UiPath automation to scrape the website systematically.
+    </p>
+    <p>
+      Beyond just performance statistics, additional contextual information such as match scores and stadium details—publicly displayed during the website—was scraped to enrich the dataset and provide a comprehensive view of each game.
+    </p>
+    <p>
+      To enhance the dataset further, we expanded data sourcing to include every country that competed against South Africa in the Rugby World Cup. Player images and key bio-data such as height, weight, and age were scraped from the official rugby websites of each nation. All scraping was automated with UiPath, ensuring consistency and accuracy throughout the data collection process.
+    </p>
+  </div>
+</section>
+
+
+
+
+<section id="sourcing-data" class="springboks-spotlight">
+  <div class="image">
+    <img src="images/player_profile_image_6sri9q.jpg" alt="Headshot of a rugby player used in the dashboard" />
+  </div>
+  <div class="content">
+    <h2>Player Images</h2>
+    <p>To make the dashboard more engaging and personal, I integrated player headshots for every team. The goal was to go beyond just numbers and give each player a visual presence in the dashboard.</p>
+    <p>During the data scraping process outlined in the previous section, I captured the image paths for each player profile. I downloaded and compressed the images to keep the file sizes manageable, then uploaded them to Imgur to generate reliable public URLs.</p>
+    <p>These Imgur links were added to the dataset, allowing Tableau to display each player’s image dynamically throughout the dashboard. This added a polished, professional touch and helped users connect better with the data.</p>
+  </div>
+</section>
+
+<section class="spotlight style1 orient-top content-align-left image-position-top onscroll-fade-in" id="data-enrichment">
+  <div class="content">
+    <h2>Data Enrichment</h2>
+    <p>This was one of the most exciting parts of the entire project — and honestly, even I was impressed with how it turned out. I created a standout performances table that highlights top players from each match, complete with curated video moments. Altogether, I sourced and linked 71 short-form highlight clips across the dataset.</p>
+
+    <p>The clips — pulled from Instagram and TikTok — showcase some of rugby’s most thrilling moments: sidesteps, offloads, crunching tackles, and powerful hand-offs. These include <a href="https://www.instagram.com/reel/Cw9p6OqtS4J/?utm_source=ig_web_copy_link" target="_blank" rel="noopener">Siya Kolisi’s inspirational return</a> from an ACL injury just in time for the World Cup, <a href="https://www.instagram.com/reel/CxlEBD9Nq05/?utm_source=ig_web_copy_link" target="_blank" rel="noopener">Damian de Allende’s hard running</a> against the Irish, and <a href="https://www.instagram.com/reel/Cygbb6UNUKu/?utm_source=ig_web_copy_link" target="_blank" rel="noopener">Jesse Kriel’s superhuman effort</a> in the epic quarterfinal against France.</p>
+
+    <ul class="actions">
+      <li><a href="https://public.tableau.com/app/profile/tadiwanashe.mudzongo/viz/Springboks2023RugbyWorldCupCampaign/TheSpringboks2023Campaign" class="button" target="_blank" rel="noopener">View Tableau Dashboard</a></li>
+      <li><a href="../index.html" class="button alt">Back to Home</a></li>
+    </ul>
+
+    <!-- Instagram Reel Embed -->
+    <div class="video-embed" style="margin-top: 2rem; padding: 0;">
+      <blockquote class="instagram-media"
+        data-instgrm-captioned
+        data-instgrm-permalink="https://www.instagram.com/reel/Cw9p6OqtS4J/?utm_source=ig_embed&amp;utm_campaign=loading"
+        data-instgrm-version="14"
+        style="margin: 0; padding: 0; max-width: 540px; width: 100%; border: none;">
+      </blockquote>
+    </div>
+  </div>
+</section>
+
+<script async src="//www.instagram.com/embed.js"></script>
+
+
+
+
+
+  </div>
+
+  <!-- Scripts -->
+  <script src="../assets/js/jquery.min.js"></script>
+  <script src="../assets/js/jquery.scrollex.min.js"></script>
+  <script src="../assets/js/jquery.scrolly.min.js"></script>
+  <script src="../assets/js/browser.min.js"></script>
+  <script src="../assets/js/breakpoints.min.js"></script>
+  <script src="../assets/js/util.js"></script>
+  <script src="../assets/js/main.js"></script>
+</body>
+</html>
