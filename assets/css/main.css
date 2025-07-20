@@ -8933,3 +8933,22 @@ input, select, textarea {
     padding-right: 0;
   }
 }
+/* Default desktop layout: no changes */
+
+/* Mobile layout: max-width 900px (adjust breakpoint if needed) */
+@media (max-width: 900px) {
+  /* Stack content vertically */
+  section.spotlight {
+    display: flex !important; /* ensure flex is enabled */
+    flex-direction: column !important; /* stack vertically */
+  }
+
+  /* Make image appear before content */
+  section.spotlight .image {
+    order: 0 !important;
+  }
+
+  section.spotlight .content {
+    order: 1 !important;
+  }
+}
