@@ -8952,3 +8952,24 @@ input, select, textarea {
     order: 1 !important;
   }
 }
+
+
+
+
+
+
+@media (max-width: 768px) {
+  .springboks-spotlight {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .springboks-spotlight .image {
+    max-width: 100%;
+    width: 100%;
+  }
+
+  .springboks-spotlight .content {
+    padding-right: 0;
+  }
+}
