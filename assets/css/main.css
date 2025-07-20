@@ -8971,5 +8971,8 @@ input, select, textarea {
 
   .springboks-spotlight .content {
     padding-right: 0;
+    margin-left: 1rem;   /* ← added left margin */
+    margin-right: 1rem;  /* ← optional balancing right margin */
   }
 }
+
