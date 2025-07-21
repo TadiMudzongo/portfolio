@@ -20,89 +20,86 @@
 <body class="is-preload">
 
   <!-- Section-specific CSS -->
-  <style>
-    #springboks-campaign {
-  display: flex;
-  flex-direction: column;  /* stack vertically */
-  align-items: stretch;    /* make children take full width */
-  margin: 4rem 2rem;
-  gap: 2rem;
-}
+<style>
+  /* Image section */
+  #springboks-image {
+    display: flex;
+    justify-content: center;
+    margin: 4rem 2rem;
+  }
 
-#springboks-campaign .image-stack {
-  width: 100%;         /* full width */
-  max-width: none;     /* no max-width */
-}
+  #springboks-image .image-stack {
+    width: 100%;
+    max-width: none;
+  }
 
-#springboks-campaign .image-stack img {
-  width: 100%;
-  height: auto;
-  max-height: 1000px;
-  object-fit: contain; /* shrink without cropping */
-  border-radius: 0;    /* no rounded corners */
-  box-shadow: none;    /* no shadow */
-  display: block;      /* remove inline spacing below img */
-}
+  #springboks-image .image-stack img {
+    width: 100%;
+    height: auto;
+    max-height: 1000px;
+    object-fit: contain;
+    border-radius: 0;
+    box-shadow: none;
+    display: block;
+  }
 
-#springboks-campaign .content {
-  width: 100%;
-  max-width: 1000px;  /* wider max width on desktop */
-  margin-left: 1rem;  /* margin on left */
-  margin-right: 1rem; /* margin on right */
-  box-sizing: border-box;
-  text-align: left;   /* ensure text left aligned */
-}
+  /* Content section */
+  #springboks-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 4rem 2rem;
+  }
 
-/* On mobile, keep margin consistent */
-@media (max-width: 768px) {
-  #springboks-campaign .content {
+  #springboks-content .content {
+    width: 100%;
+    max-width: 1000px;
     margin-left: 1rem;
     margin-right: 1rem;
+    box-sizing: border-box;
+    text-align: left;
   }
-}
 
-
-
-
+  @media (max-width: 768px) {
+    #springboks-content .content {
+      margin-left: 1rem;
+      margin-right: 1rem;
     }
-  </style>
+  }
+</style>
 </head>
 <body class="is-preload">
 
-  <!-- Wrapper -->
-  <div id="wrapper" class="divided">
+<!-- Wrapper -->
+<div id="wrapper" class="divided">
 
-   <section class="springboks-campaign spotlight style1 orient-left content-align-left image-position-centre onscroll-image-fade-in" 
-         id="springboks-campaign" 
-         style="display: flex; flex-direction: column; align-items: stretch;">
-  
+  <!-- Image Section -->
+  <section id="springboks-image">
+    <div class="image-stack">
+      <img src="images/springboks.png" alt="Springboks RWC Campaign Visualization">
+    </div>
+  </section>
 
-  <div class="image-stack fit">
-    <img src="images/vs-france.png" alt="Springboks 2023 Rugby World Cup match image" />
-  </div>
- 
+  <!-- Content Section -->
+  <section id="springboks-content">
+    <div class="content">
+      <h2>Springboks Rugby World Cup 2023 Campaign</h2>
+      <p>This dashboard visualises South Africa’s dramatic journey through the 2023 Rugby World Cup — the closest campaign in RWC history. The Boks won their last three games by just 1 point each!</p>
 
-  <div class="content" style="width: 100%; max-width: none; flex: 1;">
-    <h2>Springboks 2023 World Cup Campaign Data Visualisation</h2>
-    <p>This project tracks every match played by the Springboks in their <strong>2023 Rugby World Cup campaign</strong>, highlighting key stats, player contributions, and the immense pressure faced in the knockout rounds. It includes performance data from SA Rugby and features <strong>71 highlight reels</strong> of individual players' game-defining moments.</p>
+      <h3>Project Highlights</h3>
+      <ul>
+        <li>Scraping and cleaning match data for South Africa and their opponents</li>
+        <li>Designing a mobile-friendly Tableau dashboard</li>
+        <li>Creating a visual storytelling experience with score progression and margin analysis</li>
+      </ul>
 
-    <h3>Project Highlights</h3>
-    <ul>
-      <li>Detailed match-by-match analysis and statistics</li>
-      <li>Player performance and contribution breakdown</li>
-      <li>Video highlights capturing crucial moments</li>
-      <li>Interactive Tableau dashboard for data exploration</li>
-    </ul>
+      <ul class="actions">
+        <li><a href="https://public.tableau.com/views/SpringboksRWC2023Campaign/MatchTracker" class="button" target="_blank" rel="noopener">View Tableau Dashboard</a></li>
+        <li><a href="index.html" class="button alt">Back to Home</a></li>
+      </ul>
+    </div>
+  </section>
 
-    <h3>Access the Dashboard</h3>
-    <p>Explore the full dataset and interactive visualisations using the official Tableau dashboard linked below.</p>
-
-    <ul class="actions">
-      <li><a href="https://public.tableau.com/app/profile/tadiwanashe.mudzongo/viz/Springboks2023RugbyWorldCupCampaign/TheSpringboks2023Campaign" class="button" target="_blank" rel="noopener">View Tableau Dashboard</a></li>
-      <li><a href="index.html" class="button alt">Back to Home</a></li>
-    </ul>
-  </div>
-</section>
 
 
   
