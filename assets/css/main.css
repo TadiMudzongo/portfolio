@@ -8976,3 +8976,29 @@ input, select, textarea {
   }
 }
 
+
+
+@media (max-width: 768px) {
+  #first.springboks-spotlight {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  #first.springboks-spotlight .image-stack {
+    order: -1; /* move image above text */
+    width: 100%;
+    text-align: center;
+  }
+
+  #first.springboks-spotlight .image-stack img {
+    max-width: 100%;
+    height: auto;
+  }
+
+  #first.springboks-spotlight .content {
+    padding-right: 0;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    text-align: left;
+  }
+}
