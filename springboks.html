@@ -22,50 +22,32 @@
   <!-- Section-specific CSS -->
   <style>
     .springboks-campaign {
-      display: flex;
-      flex-direction: row;
-      align-items: flex-start;
-      justify-content: space-between;
-      gap: 4rem;
-      margin: 4rem 2rem;
-      flex-wrap: wrap;
-    }
+  display: flex;
+  flex-direction: column; /* Always stack vertically */
+  align-items: center;
+  margin: 4rem 2rem;
+  gap: 2rem;
+}
 
-    .springboks-campaign .image-stack {
-      flex: 1 1 40%;
-      max-width: 540px;
-    }
+.springboks-campaign .image-stack {
+  width: 100%;        /* Full width container */
+  max-width: none;    /* Remove max width limit */
+}
 
-    .springboks-campaign .image-stack img {
-      width: 100%;
-      height: auto;
-      border-radius: 1rem;
-      box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15);
-    }
+.springboks-campaign .image-stack img {
+  width: 100%;        /* Image fills container */
+  height: auto;
+  border-radius: 0;   /* Remove rounded corners */
+  box-shadow: none;   /* Remove shadow */
+}
 
-    .springboks-campaign .content {
-      flex: 1 1 50%;
-      max-width: 700px;
-    }
+.springboks-campaign .content {
+  width: 100%;
+  max-width: 700px;   /* Content max width for readability */
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
 
-    @media (max-width: 768px) {
-      .springboks-campaign {
-        flex-direction: column;
-        margin: 2rem 1rem;
-        gap: 2rem;
-      }
-
-      .springboks-campaign .image-stack,
-      .springboks-campaign .content {
-        width: 100%;
-        max-width: 100%;
-        margin: 0 auto;
-      }
-
-      .springboks-campaign .content {
-        padding-left: 1rem;
-        padding-right: 1rem;
-      }
     }
   </style>
 </head>
