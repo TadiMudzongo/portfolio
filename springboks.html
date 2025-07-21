@@ -19,40 +19,90 @@
 </head>
 <body class="is-preload">
 
+  <!-- Section-specific CSS -->
+  <style>
+    .springboks-campaign {
+      display: flex;
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-between;
+      gap: 4rem;
+      margin: 4rem 2rem;
+      flex-wrap: wrap;
+    }
+
+    .springboks-campaign .image-stack {
+      flex: 1 1 40%;
+      max-width: 540px;
+    }
+
+    .springboks-campaign .image-stack img {
+      width: 100%;
+      height: auto;
+      border-radius: 1rem;
+      box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.15);
+    }
+
+    .springboks-campaign .content {
+      flex: 1 1 50%;
+      max-width: 700px;
+    }
+
+    @media (max-width: 768px) {
+      .springboks-campaign {
+        flex-direction: column;
+        margin: 2rem 1rem;
+        gap: 2rem;
+      }
+
+      .springboks-campaign .image-stack,
+      .springboks-campaign .content {
+        width: 100%;
+        max-width: 100%;
+        margin: 0 auto;
+      }
+
+      .springboks-campaign .content {
+        padding-left: 1rem;
+        padding-right: 1rem;
+      }
+    }
+  </style>
+</head>
+<body class="is-preload">
+
   <!-- Wrapper -->
   <div id="wrapper" class="divided">
 
-<section class="spotlight style1 orient-right content-align-left image-position-center onscroll-image-fade-in springboks-spotlight" id="first">
-  
-  
-  
-  <div class="content">
-    <h2>Springboks 2023 World Cup Campaign Data Visualisation</h2>
-    <p>This project tracks every match played by the Springboks in their <strong>2023 Rugby World Cup campaign</strong>, highlighting key stats, player contributions, and the immense pressure faced in the knockout rounds. It includes performance data from SA Rugby and features <strong>71 highlight reels</strong> of individual players' game-defining moments.</p>
+    <section class="springboks-campaign">
+      <div class="image-stack">
+        <img src="images/vs-france.png" alt="Springboks 2023 Rugby World Cup match image" />
+      </div>
 
-    <h3>Project Highlights</h3>
-    <ul>
-      <li>Detailed match-by-match analysis and statistics</li>
-      <li>Player performance and contribution breakdown</li>
-      <li>Video highlights capturing crucial moments</li>
-      <li>Interactive Tableau dashboard for data exploration</li>
-    </ul>
+      <div class="content">
+        <h2>Springboks 2023 World Cup Campaign Data Visualisation</h2>
+        <p>This project tracks every match played by the Springboks in their <strong>2023 Rugby World Cup campaign</strong>, highlighting key stats, player contributions, and the immense pressure faced in the knockout rounds. It includes performance data from SA Rugby and features <strong>71 highlight reels</strong> of individual players' game-defining moments.</p>
 
-    <h3>Access the Dashboard</h3>
-    <p>Explore the full dataset and interactive visualisations using the official Tableau dashboard linked below.</p>
+        <h3>Project Highlights</h3>
+        <ul>
+          <li>Detailed match-by-match analysis and statistics</li>
+          <li>Player performance and contribution breakdown</li>
+          <li>Video highlights capturing crucial moments</li>
+          <li>Interactive Tableau dashboard for data exploration</li>
+        </ul>
 
-    <ul class="actions">
-      <li><a href="https://public.tableau.com/app/profile/tadiwanashe.mudzongo/viz/Springboks2023RugbyWorldCupCampaign/TheSpringboks2023Campaign" class="button" target="_blank" rel="noopener">View Tableau Dashboard</a></li>
-      <li><a href="index.html" class="button alt">Back to Home</a></li>
-    </ul>
-  </div>
+        <h3>Access the Dashboard</h3>
+        <p>Explore the full dataset and interactive visualisations using the official Tableau dashboard linked below.</p>
 
-<div class="image-stack">
-    <img src="images/vs-france.png" alt="Springboks 2023 Rugby World Cup match image" />
-    
-  </div>
+        <ul class="actions">
+          <li><a href="https://public.tableau.com/app/profile/tadiwanashe.mudzongo/viz/Springboks2023RugbyWorldCupCampaign/TheSpringboks2023Campaign" class="button" target="_blank" rel="noopener">View Tableau Dashboard</a></li>
+          <li><a href="index.html" class="button alt">Back to Home</a></li>
+        </ul>
+      </div>
+    </section>
+
   
-</section>
+
 
 
 <section id="sourcing-data" class="springboks-spotlight">
