@@ -19,62 +19,60 @@
 </head>
 <body class="is-preload">
 
-  <!-- Section-specific CSS -->
+<!-- Section-specific CSS -->
 <style>
-  /* Image section */
+  /* Image Section */
   #springboks-image {
-    display: flex;
-    justify-content: center;
-    margin: 4rem 2rem;
+    margin: 4rem 0;
   }
 
   #springboks-image .image-stack {
     width: 100%;
-    max-width: none;
   }
 
   #springboks-image .image-stack img {
     width: 100%;
     height: auto;
-    max-height: none;
-    object-fit: contain;
+    object-fit: cover;
+    display: block;
     border-radius: 0;
     box-shadow: none;
-    display: block;
   }
 
-  /* Content section */
+  /* Content Section */
   #springboks-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 4rem 1rem;
+    padding: 4rem 2rem;
   }
 
   #springboks-content .content {
-    width: 100%;
     max-width: 1000px;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    box-sizing: border-box;
+    margin: 0 auto;
     text-align: left;
   }
 
-  @media (max-width: 768px) {
+  @media (min-width: 769px) {
     #springboks-content .content {
-      margin-left: 1rem;
-      margin-right: 1rem;
+      margin-left: 0;
+    }
+  }
+
+  @media (max-width: 768px) {
+    #springboks-content {
+      padding: 2rem 1rem;
+    }
+
+    #springboks-content .content {
+      margin-left: auto;
+      margin-right: auto;
     }
   }
 </style>
-</head>
-
 
 <!-- Wrapper -->
 <div id="wrapper" class="divided">
 
   <!-- Image Section -->
-  <section id="springboks-image" class="onload-image-fade-in"> 
+  <section id="springboks-image" class="onload-image-fade-in">
     <div class="image-stack">
       <img src="images/vs-france.png" alt="Springboks RWC Campaign Visualization">
     </div>
@@ -99,6 +97,8 @@
       </ul>
     </div>
   </section>
+</div>
+
 
 
 
