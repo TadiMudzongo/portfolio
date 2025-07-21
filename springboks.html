@@ -24,7 +24,7 @@
     #springboks-campaign {
   display: flex;
   flex-direction: column;  /* stack vertically */
-  align-items: center;
+  align-items: stretch;    /* make children take full width */
   margin: 4rem 2rem;
   gap: 2rem;
 }
@@ -41,23 +41,26 @@
   object-fit: contain; /* shrink without cropping */
   border-radius: 0;    /* no rounded corners */
   box-shadow: none;    /* no shadow */
+  display: block;      /* remove inline spacing below img */
 }
 
 #springboks-campaign .content {
   width: 100%;
   max-width: 1000px;  /* wider max width on desktop */
-  padding-left: 1rem;  /* default padding */
-  padding-right: 1rem;
+  margin-left: 1rem;  /* margin on left */
+  margin-right: 1rem; /* margin on right */
   box-sizing: border-box;
+  text-align: left;   /* ensure text left aligned */
 }
 
-/* On mobile, add larger horizontal padding/margin */
+/* On mobile, keep margin consistent */
 @media (max-width: 768px) {
   #springboks-campaign .content {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
   }
 }
+
 
 
 
