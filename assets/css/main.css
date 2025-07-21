@@ -8979,26 +8979,26 @@ input, select, textarea {
 
 
 @media (max-width: 768px) {
-  /* Target only the #first section */
   #first.springboks-spotlight {
-    display: flex;
-    flex-direction: column-reverse; /* this stacks image above content */
-    gap: 2rem;
+    display: flex !important;
+    flex-direction: column-reverse !important;
+    gap: 2rem !important;
+    align-items: stretch !important;
   }
 
   #first.springboks-spotlight .image-stack {
-    width: 100%;
-    text-align: center;
+    width: 100% !important;
+    text-align: center !important;
+    padding: 0 1rem !important;
   }
 
   #first.springboks-spotlight .image-stack img {
-    max-width: 100%;
-    height: auto;
+    max-width: 100% !important;
+    height: auto !important;
   }
 
   #first.springboks-spotlight .content {
-    margin-left: 1rem;
-    margin-right: 1rem;
-    text-align: left;
+    margin: 0 1rem !important;
+    text-align: left !important;
   }
 }
