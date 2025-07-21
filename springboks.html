@@ -30,23 +30,34 @@
 }
 
 .springboks-campaign .image-stack {
-  width: 100%;        /* Full width container */
-  max-width: none;    /* Remove max width limit */
+  width: 100%;         /* Full width container */
+  max-width: none;     /* Remove max width limit */
 }
 
 .springboks-campaign .image-stack img {
-  width: 100%;        /* Image fills container */
+  width: 100%;         /* Image fills container */
   height: auto;
-  border-radius: 0;   /* Remove rounded corners */
-  box-shadow: none;   /* Remove shadow */
+  max-height: 700px;   /* Max height on desktop */
+  object-fit: contain; /* Shrinks image without cropping */
+  border-radius: 0;    /* Remove rounded corners */
+  box-shadow: none;    /* Remove shadow */
 }
 
 .springboks-campaign .content {
   width: 100%;
-  max-width: 700px;   /* Content max width for readability */
-  padding-left: 1rem;
-  padding-right: 1rem;
+  max-width: 700px;    /* Content max width for readability */
+  padding-left: 2rem;  /* default desktop padding */
+  padding-right: 2rem;
 }
+
+/* On mobile, reduce left/right padding */
+@media (max-width: 768px) {
+  .springboks-campaign .content {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}
+
 
     }
   </style>
