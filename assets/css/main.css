@@ -8979,13 +8979,14 @@ input, select, textarea {
 
 
 @media (max-width: 768px) {
+  /* Target only the #first section */
   #first.springboks-spotlight {
-    flex-direction: column;
+    display: flex;
+    flex-direction: column-reverse; /* this stacks image above content */
     gap: 2rem;
   }
 
   #first.springboks-spotlight .image-stack {
-    order: -1; /* move image above text */
     width: 100%;
     text-align: center;
   }
@@ -8996,7 +8997,6 @@ input, select, textarea {
   }
 
   #first.springboks-spotlight .content {
-    padding-right: 0;
     margin-left: 1rem;
     margin-right: 1rem;
     text-align: left;
