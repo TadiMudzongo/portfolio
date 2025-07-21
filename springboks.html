@@ -21,42 +21,44 @@
 
   <!-- Section-specific CSS -->
   <style>
-    .springboks-campaign {
+    #springboks-campaign {
   display: flex;
-  flex-direction: column; /* Always stack vertically */
+  flex-direction: column;  /* stack vertically */
   align-items: center;
   margin: 4rem 2rem;
   gap: 2rem;
 }
 
-.springboks-campaign .image-stack {
-  width: 100%;         /* Full width container */
-  max-width: none;     /* Remove max width limit */
+#springboks-campaign .image-stack {
+  width: 100%;         /* full width */
+  max-width: none;     /* no max-width */
 }
 
-.springboks-campaign .image-stack img {
-  width: 100%;         /* Image fills container */
-  height: auto;
-  max-height: 700px;   /* Max height on desktop */
-  object-fit: contain; /* Shrinks image without cropping */
-  border-radius: 0;    /* Remove rounded corners */
-  box-shadow: none;    /* Remove shadow */
-}
-
-.springboks-campaign .content {
+#springboks-campaign .image-stack img {
   width: 100%;
-  max-width: 700px;    /* Content max width for readability */
-  padding-left: 2rem;  /* default desktop padding */
-  padding-right: 2rem;
+  height: auto;
+  max-height: 700px;
+  object-fit: contain; /* shrink without cropping */
+  border-radius: 0;    /* no rounded corners */
+  box-shadow: none;    /* no shadow */
 }
 
-/* On mobile, reduce left/right padding */
+#springboks-campaign .content {
+  width: 100%;
+  max-width: 1000px;  /* wider max width on desktop */
+  padding-left: 2rem;  /* default padding */
+  padding-right: 2rem;
+  box-sizing: border-box;
+}
+
+/* On mobile, add larger horizontal padding/margin */
 @media (max-width: 768px) {
-  .springboks-campaign .content {
-    padding-left: 1rem;
-    padding-right: 1rem;
+  #springboks-campaign .content {
+    padding-left: 4rem;
+    padding-right: 4rem;
   }
 }
+
 
 
     }
@@ -67,32 +69,32 @@
   <!-- Wrapper -->
   <div id="wrapper" class="divided">
 
-    <section class="springboks-campaign">
-      <div class="image-stack">
-        <img src="images/vs-france.png" alt="Springboks 2023 Rugby World Cup match image" />
-      </div>
+   <section id="springboks-campaign">
+  <div class="image-stack">
+    <img src="images/vs-france.png" alt="Springboks 2023 Rugby World Cup match image" />
+  </div>
 
-      <div class="content">
-        <h2>Springboks 2023 World Cup Campaign Data Visualisation</h2>
-        <p>This project tracks every match played by the Springboks in their <strong>2023 Rugby World Cup campaign</strong>, highlighting key stats, player contributions, and the immense pressure faced in the knockout rounds. It includes performance data from SA Rugby and features <strong>71 highlight reels</strong> of individual players' game-defining moments.</p>
+  <div class="content">
+    <h2>Springboks 2023 World Cup Campaign Data Visualisation</h2>
+    <p>This project tracks every match played by the Springboks in their <strong>2023 Rugby World Cup campaign</strong>, highlighting key stats, player contributions, and the immense pressure faced in the knockout rounds. It includes performance data from SA Rugby and features <strong>71 highlight reels</strong> of individual players' game-defining moments.</p>
 
-        <h3>Project Highlights</h3>
-        <ul>
-          <li>Detailed match-by-match analysis and statistics</li>
-          <li>Player performance and contribution breakdown</li>
-          <li>Video highlights capturing crucial moments</li>
-          <li>Interactive Tableau dashboard for data exploration</li>
-        </ul>
+    <h3>Project Highlights</h3>
+    <ul>
+      <li>Detailed match-by-match analysis and statistics</li>
+      <li>Player performance and contribution breakdown</li>
+      <li>Video highlights capturing crucial moments</li>
+      <li>Interactive Tableau dashboard for data exploration</li>
+    </ul>
 
-        <h3>Access the Dashboard</h3>
-        <p>Explore the full dataset and interactive visualisations using the official Tableau dashboard linked below.</p>
+    <h3>Access the Dashboard</h3>
+    <p>Explore the full dataset and interactive visualisations using the official Tableau dashboard linked below.</p>
 
-        <ul class="actions">
-          <li><a href="https://public.tableau.com/app/profile/tadiwanashe.mudzongo/viz/Springboks2023RugbyWorldCupCampaign/TheSpringboks2023Campaign" class="button" target="_blank" rel="noopener">View Tableau Dashboard</a></li>
-          <li><a href="index.html" class="button alt">Back to Home</a></li>
-        </ul>
-      </div>
-    </section>
+    <ul class="actions">
+      <li><a href="https://public.tableau.com/app/profile/tadiwanashe.mudzongo/viz/Springboks2023RugbyWorldCupCampaign/TheSpringboks2023Campaign" class="button" target="_blank" rel="noopener">View Tableau Dashboard</a></li>
+      <li><a href="index.html" class="button alt">Back to Home</a></li>
+    </ul>
+  </div>
+</section>
 
   
 
