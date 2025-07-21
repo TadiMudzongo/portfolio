@@ -20,6 +20,47 @@
 </head>
 <body class="is-preload">
 
+  <style>
+  /* DESKTOP: Stretch content to fill remaining space */
+@media (min-width: 769px) {
+  .zim-election-spotlight {
+    display: flex !important;
+    align-items: flex-start !important;
+  }
+
+  .zim-election-spotlight .image {
+    flex: 0 0 auto !important;
+  }
+
+  .zim-election-spotlight .content {
+    flex: 1 !important;
+    padding: 4rem 2rem 2rem 2rem !important;
+  }
+}
+
+/* MOBILE: Stack vertically + 1rem side padding */
+@media (max-width: 768px) {
+  .zim-election-spotlight {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+  }
+
+  .zim-election-spotlight .image,
+  .zim-election-spotlight .content {
+    width: 100% !important;
+  }
+
+  .zim-election-spotlight .content {
+    padding: 2rem 1rem !important;
+  }
+
+  .zim-election-spotlight img {
+    max-width: 100% !important;
+    height: auto !important;
+  }
+}
+</style>
   <!-- Wrapper -->
   <div id="wrapper" class="divided">
 
