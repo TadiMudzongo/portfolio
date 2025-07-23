@@ -30,8 +30,8 @@
     color: inherit;
     white-space: nowrap;
     overflow: hidden;
-    margin-top: 0.5em;          /* adjust spacing above */
-    margin-bottom: 0.5em;       /* adjust spacing below */
+    margin-top: 1em;          /* adjust spacing above */
+         /* adjust spacing below */
   }
 
   #cursor {
@@ -461,7 +461,7 @@ Poor reporting? Repetitive tasks? Messy data? Let me know, and I’ll show you w
 
     if (!deleting && currentChar === fullText.length) {
       deleting = true;
-      setTimeout(type, 1500); // wait before deleting
+      setTimeout(type, 3000); // wait before deleting
     } else if (deleting && currentChar === 0) {
       deleting = false;
       currentService = (currentService + 1) % services.length;
