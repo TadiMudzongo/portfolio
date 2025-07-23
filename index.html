@@ -23,27 +23,29 @@
 		<link rel="icon" href="favicon.ico" type="image/x-icon" />
 
 		<style>
-			#typed-text {
-  font-family: inherit;
-  font-weight: inherit;
-  color: inherit; /* you can adjust color */
-  white-space: nowrap;
-  overflow: hidden;
-}
+  #typed-text, #cursor {
+    display: inline-block;      /* allow vertical margin */
+    font-family: inherit;
+    font-weight: inherit;
+    color: inherit;
+    white-space: nowrap;
+    overflow: hidden;
+    margin-top: 0.5em;          /* adjust spacing above */
+    margin-bottom: 0.5em;       /* adjust spacing below */
+  }
 
-#cursor {
-  font-weight: 600;
-  color: inherit;
-  animation: blink 0.7s infinite;
-  user-select: none;
-}
+  #cursor {
+    font-weight: 600;
+    animation: blink 0.7s infinite;
+    user-select: none;
+  }
 
-@keyframes blink {
-  0%, 100% { opacity: 1; }
-  50% { opacity: 0; }
-}
+  @keyframes blink {
+    0%, 100% { opacity: 1; }
+    50% { opacity: 0; }
+  }
+</style>
 
-		</style>
 	</head>
 	<body class="is-preload">
 
