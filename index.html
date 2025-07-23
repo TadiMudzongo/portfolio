@@ -21,6 +21,29 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
 		<link rel="icon" href="favicon.ico" type="image/x-icon" />
+
+		<style>
+			#typed-text {
+  font-family: inherit;
+  font-weight: 600;
+  color: #0a74da; /* you can adjust color */
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+#cursor {
+  font-weight: 600;
+  color: #0a74da;
+  animation: blink 0.7s infinite;
+  user-select: none;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}
+
+		</style>
 	</head>
 	<body class="is-preload">
 
@@ -31,7 +54,13 @@
 					<section class="banner style1 orient-left content-align-left image-position-right fullscreen onload-image-fade-in onload-content-fade-right">
 						<div class="content">
 							<h1>Tadiwanashe Mudzongo Portfolio</h1>
-                            <p class="major">A collection of projects in data visualisation, workflow automation, and web scraping.</p>
+                           <p class="major">
+  A collection of projects in data visualisation, workflow automation, and web scraping.
+</p>
+<p class="major">
+  Services include: <span id="typed-text"></span><span id="cursor">|</span>
+</p>
+
 							<ul class="actions stacked">
   <li>
     <a href="#first" class="button big wide smooth-scroll-middle">
@@ -402,8 +431,45 @@ Poor reporting? Repetitive tasks? Messy data? Let me know, and I’ll show you w
     // optionally scroll into view:
     thankSection.scrollIntoView({ behavior: 'smooth' });
   }
-</script>
+				
+  const services = [
+    "Data Visualisation",
+    "Process Automation",
+    "Business Intelligence"
+  ];
 
+  let currentService = 0;
+  let currentChar = 0;
+  let deleting = false;
+  const typedText = document.getElementById("typed-text");
+
+  function type() {
+    const fullText = services[currentService];
+    if (deleting) {
+      currentChar--;
+    } else {
+      currentChar++;
+    }
+
+    typedText.textContent = fullText.substring(0, currentChar);
+
+    if (!deleting && currentChar === fullText.length) {
+      deleting = true;
+      setTimeout(type, 1500); // wait before deleting
+    } else if (deleting && currentChar === 0) {
+      deleting = false;
+      currentService = (currentService + 1) % services.length;
+      setTimeout(type, 500); // wait before typing next
+    } else {
+      setTimeout(type, deleting ? 50 : 100);
+    }
+  }
+
+  document.addEventListener("DOMContentLoaded", type);
+
+
+</script>
+	
 
 	</body>
 </html>
