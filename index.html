@@ -503,9 +503,18 @@ Poor reporting? Repetitive tasks? Messy data? Let me know, and I’ll show you w
 
 
 </script>
-	
+	<!-- At the end of your HTML, just before </body> -->
+<script>
+  window.addEventListener('load', () => {
+    // Trigger the scroll animations immediately on page load
+    window.dispatchEvent(new Event('scroll'));
+  });
+</script>
+</body>
+
 
 	</body>
 </html>
+
 
 
